@@ -33,7 +33,19 @@
 
 .upcoming-event {
     height: 420px;
-    .event-time-range p {
+    .upcoming-event-date {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        background-color: #FFF;
+        text-align: center;
+        width: 100px;
+        max-width: 100px;
+        background: #fefefe;
+        padding: 25px 0 20px 0;
+    }
+    .event-time-range p,
+    .upcoming-event-month {
         color: #15cadb;
     }
     .content-link {
@@ -43,4 +55,24 @@
             color: #f41361;
         }
     }
+}
+
+.upcoming-event-date:after  {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-top: 13px solid #fefefe;
+    border-left: 100px solid transparent
+}
+
+.upcoming-even-image:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 183px;
+    right: 0;
+    border-bottom: 99px solid white;
+    border-right: 365px solid transparent
 }
