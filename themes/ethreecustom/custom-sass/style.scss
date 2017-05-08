@@ -2,5 +2,45 @@
 @import '../bootstrap-sass/bootstrap.scss';
 
 /** Overrides **/
+.navbar .logo img {
+    width: 40%;
+    height: auto;
+}
 
-/****/
+.header-top-title,
+.featured-event-date {
+    color: #15cadb;
+}
+
+.view-header {
+    color: #FFF;
+    text-align: center;
+    h2 {
+        background-color: #000;
+        padding: 8px;
+    }
+}
+
+.featured-event {
+    .content-link {
+        a {
+            background-color: #f41361;
+            color: #FFF;
+            padding: 8px;
+        }
+    }
+}
+
+.upcoming-event {
+    height: 420px;
+    .event-time-range p {
+        color: #15cadb;
+    }
+    .content-link {
+        border-top: 4px solid red;
+        padding-top: 8px;
+        a {
+            color: #f41361;
+        }
+    }
+}

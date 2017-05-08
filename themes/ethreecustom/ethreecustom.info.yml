@@ -20,5 +20,5 @@ regions:
   page_bottom: 'Page bottom'
 
 libraries:
-  - 'THEMENAME/global-styling'
-  - 'THEMENAME/bootstrap-scripts'
+  - 'ethreecustom/global-styling'
+  - 'ethreecustom/bootstrap-scripts'
