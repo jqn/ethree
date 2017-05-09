@@ -1,14 +1,13 @@
 @import 'compass';
 @import '../bootstrap-sass/bootstrap.scss';
 
-/** Overrides **/
+/** Overrides and Small layout changes **/
 .navbar-default {
   background-color: #FFF;
   border-color: #FFF;
  }
 
 .navbar-nav {
-    // border-top: 28px solid #15cadb;
     float: right;
     li {
         a {
@@ -92,6 +91,7 @@
     padding-top: 8px;
 }
 
+/*** Slants ***/
 .header-top-image:after {
     content: '';
     display: block;
@@ -147,4 +147,111 @@
     z-index: -1;
     -webkit-transform: skew(-15deg, 0deg) translate3d(0, 0, 0);
     transform: skew(-15deg, 0deg) translate3d(0, 0, 0);
+}
+
+@media only screen and (max-width: 1024px) {
+    .upcoming-event-image:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 240px;
+        right: 0;
+        border-bottom: 48px solid white;
+        border-right: 279px solid transparent;
+    }
+
+    .content-link-wrapper a:before {
+        content: '';
+        background: #f41361;
+        position: absolute;
+        height: 14%;
+        width: 31%;
+        left: 0;
+        top: 89%;
+        z-index: -1;
+        -webkit-transform: skew(-15deg, 0deg) translate3d(0, 0, 0);
+        transform: skew(-15deg, 0deg) translate3d(0, 0, 0);
+    }
+
+    .header-top-image:after {
+        display: none;
+    }
+
+    .header-top-content {
+        padding-top: 0;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .upcoming-event-image {
+        height: auto;
+    }
+    .upcoming-event-image:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 94px;
+            right: 0;
+            border-bottom: 150px solid white;
+            border-right: 1200px solid transparent;
+    }
+
+    .content-link-wrapper a:before {
+        content: '';
+        background: #f41361;
+        position: absolute;
+        height: 11%;
+        width: 51%;
+        left: 0;
+        top: 325px;
+        border: 3px solid transparent;
+        z-index: -1;
+        -webkit-transform: skew(-15deg, 0deg) translate3d(0, 0, 0);
+        transform: skew(-15deg, 0deg) translate3d(0, 0, 0);
+    }
+
+    .header-top-image:after {
+        display: none;
+    }
+
+    .header-top-content {
+        padding-top: 0;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .upcoming-event-image:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 59%;
+        right: 0;
+        border-bottom: 50px solid white;
+        border-right: 300px solid transparent;
+    }
+
+    .content-link-wrapper a:before {
+        content: '';
+        background: #f41361;
+        position: absolute;
+        height: 11%;
+        width: 51%;
+        left: 0;
+        top: 325px;
+        border: 3px solid transparent;
+        z-index: -1;
+        -webkit-transform: skew(-15deg, 0deg) translate3d(0, 0, 0);
+        transform: skew(-15deg, 0deg) translate3d(0, 0, 0);
+    }
+
+    .header-top-image:after {
+        display: none;
+    }
+
+    .header-top-content {
+        padding-top: 0;
+    }
+
 }
