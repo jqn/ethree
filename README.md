@@ -25,4 +25,4 @@ https://github.com/jqn/ethree
 
 ##### Pantheon.io development server
 
-[http://dev-e3jqn.pantheonsite.io/] (http://dev-e3jqn.pantheonsite.io/)
+[http://dev-e3jqn.pantheonsite.io/](http://dev-e3jqn.pantheonsite.io/)
