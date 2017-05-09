@@ -16,11 +16,16 @@ For detailed instructions on how to run this site locally please check the WIKI 
 
 ###### Unzip and drop contents of provided files.zip into ethree/sites/default.
 
+###### Create a settings.local.php with your database settings
+
 ##### Go to your favorite vhost url.
 
 ##### If the styles are not loading please run `$ grunt watch` in the ethreecustom theme directory.
 
 ***
+##### Drupal Version
+Drupal 8
+
 ##### Repo
 https://github.com/jqn/ethree
 
